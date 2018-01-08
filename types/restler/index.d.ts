@@ -14,6 +14,14 @@ declare module "restler" {
      */
     interface RestlerStatic {
         /**
+         * Create a request.
+         * @param {string}          url     A url address.
+         * @param {RestlerOptions}  options Options.
+         * @return {RestlerResult}  Result.
+         */
+        request(url: string, options?: Object): RestlerResult;
+        
+        /**
          * Create a DELETE request.
          * @param {string}          url     A url address.
          * @param {RestlerOptions}  options Options.
